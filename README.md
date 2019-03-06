@@ -79,6 +79,8 @@ main() {
 }
 ```
 
+Forking is expensive as it involves creating process context and its associated data structure. To optimize further, AFL supports in-process fuzzing where appropriate instrumentation code is generated to re-run the fuzz target with mutated input. `__AFL_LOOP` provides an indicator to AFL on each iteration of in-process fuzzing.
+
 ## Distributed Fuzzing
 
 AFL can be used for parallel fuzzing using a shared volume. [See here](http://lcamtuf.coredump.cx/afl/README.txt) for more information.
