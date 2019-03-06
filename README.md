@@ -87,7 +87,7 @@ AFL can be used for parallel fuzzing using a shared volume. [See here](http://lc
 
 ## Lets Get Real
 
-We will fuzz `libgit2` as a real-life target. The reason for choosing this target is due to ready availability of stub code meant for fuzzing with AFL i.e. a `fuzz target`. For other targets, we need to re-purpose the program or write a program using interesting functions if the target is a shared library.
+We will fuzz `libgit2` as a real-life target. The reason for choosing this target is due to ready availability of stub code meant for fuzzing with `libFuzzer` i.e. a `fuzz target`. This can easily be re-purposed for fuzzing with AFL. For other targets, we need to re-purpose the program or write a new program using interesting functions if the target is a shared library.
 
 [https://github.com/libgit2/libgit2](https://github.com/libgit2/libgit2)
 
@@ -133,3 +133,18 @@ cmake --build .
 
 ## Am I doing it right?
 
+One of things about finding bugs continuously is to ensure incremental improvement in fuzzing strategy. That means, when you start the fuzzing process, you must have the means to measure effectiveness of the current strategy.
+
+This can be done using basic coverage analysis i.e. measure the code coverage ratio (or percentage) observed during fuzzing within a reasonable time period. If this is very less, then we must look into better strategy for fuzzing.
+
+### Static Analysis of Fuzz Target
+
+### Fuzzer Coverage
+
+AFL provides `path` count during fuzzing. If no new `path` is discovered for a while during fuzzing, it might mean that the fuzzer need to be improved for better coverage.
+
+## Reference
+
+* http://lcamtuf.coredump.cx/afl/
+* https://llvm.org/docs/LibFuzzer.html
+* https://github.com/google/fuzzer-test-suite/blob/master/tutorial/structure-aware-fuzzing.md
