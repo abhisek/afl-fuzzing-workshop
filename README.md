@@ -139,6 +139,8 @@ This can be done using basic coverage analysis i.e. measure the code coverage ra
 
 ### Static Analysis of Fuzz Target
 
+[Basic Block](https://en.wikipedia.org/wiki/Basic_block) count in a program can be used as an indicator to measure coverage during fuzzing. However, a process consists of a main binary and associated shared libraries. In such a case, we need to identify the basic block count in the fuzz target i.e. the library or program that contains our target code.
+
 ### Fuzzer Coverage
 
 AFL provides `path` count during fuzzing. If no new `path` is discovered for a while during fuzzing, it might mean that the fuzzer need to be improved for better coverage.
