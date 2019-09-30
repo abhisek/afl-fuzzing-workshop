@@ -4,7 +4,7 @@
 #include <string.h>
 
 static
-int do_vuln() 
+int do_vuln()
 {
   unsigned char buf[32];
   int fd = STDIN_FILENO;
@@ -26,7 +26,7 @@ int do_vuln()
   return 0;
 }
 
-int main(int argc, char **argv) 
+int main(int argc, char **argv)
 {
   return do_vuln();
 }
