@@ -17,3 +17,7 @@
 * [Persistent Mode Fuzzing](afl-fuzzing/persistent-mode-fuzzing.md)
 * [Parallel Fuzzing](afl-fuzzing/parallel-fuzzing.md)
 
+## Fuzzing Example
+
+* [Fuzzing libgit2](afl-fuzzing/libgit2-fuzzing.md)
+
