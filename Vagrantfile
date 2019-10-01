@@ -13,10 +13,10 @@ Vagrant.configure("2") do |config|
     apt-get update
     DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential wget gdb clang cmake openssl libssl-dev
     mkdir /tmp/afl-install && cd /tmp/afl-install
-    wget -O afl-latest.tgz http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
+    wget -O afl-latest.tgz https://github.com/google/AFL/archive/v2.56b.tar.gz
     tar xzvf afl-latest.tgz
     rm -rf afl-latest.tgz
-    cd afl-*
+    cd AFL-*
     make
     cd llvm_mode
     LLVM_CONFIG=/usr/bin/llvm-config-6.0 make
