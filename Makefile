@@ -6,7 +6,10 @@ BIN_DIR := bin
 hello-vulnerable-world: src/hello-vulnerable-world.o
 	$(CC) -o $(BIN_DIR)/hello-vulnerable-world src/hello-vulnerable-world.o $(LDFLAGS)
 
-all: hello-vulnerable-world
+hello-integer-world: src/hello-integer-world.o
+	$(CC) -o $(BIN_DIR)/hello-integer-world src/hello-integer-world.o $(LDFLAGS)
+
+all: hello-vulnerable-world hello-integer-world
 
 .PHONY: clean
 clean:

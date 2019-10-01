@@ -1,8 +1,8 @@
-ubuntu-xenial-16.04-cloudimg-console.log
 .vagrant
 bin/*
 !bin/EMPTY
 src/*.o
 scratch
 
-
+ubuntu-xenial-16.04-cloudimg-console.log
+ubuntu-bionic-18.04-cloudimg-console.log
