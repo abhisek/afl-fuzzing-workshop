@@ -5,6 +5,7 @@
 ## Introduction
 
 * [Introduction](introduction/README.md)
+* [Terminologies](introduction/terminologies.md)
 * [Disclaimer](introduction/disclaimer.md)
 
 ## Environment Setup
@@ -14,6 +15,7 @@
 
 ## Fuzzing with AFL
 
+* [Getting Started with AFL](afl-fuzzing/getting-started-afl.md)
 * [Persistent Mode Fuzzing](afl-fuzzing/persistent-mode-fuzzing.md)
 * [Parallel Fuzzing](afl-fuzzing/parallel-fuzzing.md)
 
@@ -21,3 +23,6 @@
 
 * [Fuzzing libgit2](afl-fuzzing/libgit2-fuzzing.md)
 
+## Extra
+
+* [Extra and References](extra/extra-references.md)

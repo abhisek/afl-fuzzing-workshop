@@ -46,4 +46,26 @@ cmake -D BUILD_FUZZERS:BOOL=ON \
   -D CMAKE_CXX_COMPILER=afl-clang-fast++ \
   ..
 cmake --build .
+make
+```
+
+Start the fuzzing process by following the steps below:
+
+1. Create input and output directory
+
+```
+mkdir -p fuzzing/input fuzzing/output
+```
+
+2. Create input data. For this we will just use a part of the pack file from `.git`
+
+```
+cp ../.git/...
+```
+
+3. Start the fuzzer
+
+```
+afl-fuzz -i fuzzing/input -o fuzzing/output -m 512 -t 100 -- \
+  ./fuzzer/objects_fuzzer
 ```
