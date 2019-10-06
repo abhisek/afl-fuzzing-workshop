@@ -17,7 +17,7 @@ int do_stuff()
     return -1;
 
   ret = read(STDIN_FILENO, (void*) buf, n);
-  if (ret < 0)
+  if (ret <= 0)
     return -1;
 
   printf("Read %d bytes from stdin\n", ret);

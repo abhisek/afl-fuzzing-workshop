@@ -3,28 +3,31 @@ BSides Delhi 2019 Workshop Courseware:
 
   Setup and Introduction:
     Get everyone to setup their VM and have clarity on intent and objective of the workshop
-  ☐ Intent and object of the workshop
-  ☐ VM setup using Vagrant and Virtual Box
+    ☐ Intent and object of the workshop
+    ☐ VM setup using Vagrant and Virtual Box
 
   Getting started with Fuzzing using AFL:
     Get everyone to be familiar with various use-cases of AFL
-  ☐ Hello World Fuzzing
-    ☐ Simple buffer overflow
-    ☐ Simple integer overflow
-    ☐ Simple format string
-    ☐ Simple use-after-free
-  ☐ AFL use-cases
-    ☐ Single instance fuzzing
-    ☐ Multi instance fuzzing (distributed)
-    ☐ AFL Tools
+    ☐ Hello World Fuzzing
+      ☐ Simple buffer overflow
+      ☐ Simple integer overflow
+      ☐ Simple format string
+      ☐ Simple use-after-free
+    ☐ AFL use-cases
+      ☐ Single instance fuzzing
+      ☐ Multi instance fuzzing (distributed)
+      ☐ AFL Tools
 
   Targeted Fuzzing:
     Get everyone to start thinking in terms of a vulnerability researcher
-  ☐ Introduction to Threat Modelling
-  ☐ What to fuzz in a software
-  ☐ Creating fuzz target
-  ☐ Measuring fuzzer effectiveness through Coverage analysis
-  ☐ Improving fuzzer effectiveness
+    ☐ Introduction to Threat Modelling
+    ☐ What to fuzz in a software
+    ☐ Creating fuzz target
+    ☐ Measuring fuzzer effectiveness through Coverage analysis
+    ☐ Improving fuzzer effectiveness
+
+  Demo:
+    ☐ Vulnerability Discovery using WinAFL
 
   Vulnerability Discovery Hackathon:
     Get everyone to find vulnerabilities in real-life software (Github)
