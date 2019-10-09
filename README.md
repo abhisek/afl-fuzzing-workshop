@@ -12,13 +12,13 @@ BSides Delhi 2019 - https://bsidesdelhi.in
 Clone this repository
 
 ```
-git clone <URL>
+git clone https://github.com/abhisek/afl-fuzzing-workshop
 ```
 
 Switch to repository directory
 
 ```
-cd <dir>
+cd afl-fuzzing-workshop
 ```
 
 Install `Gitbook` cli
