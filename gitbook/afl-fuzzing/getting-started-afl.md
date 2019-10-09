@@ -31,6 +31,8 @@ Start the fuzzing process
 afl-fuzz -i /tmp/h1/input/ -o /tmp/h1/output/ -- ./a.out
 ```
 
+> The above program receives input from STDIN. File inputs through command line argument can be passed using `@@` special marker.
+
 Fuzzer status view indicates a crash within a few seconds of fuzzing process
 
 ![](images/afl1.png)

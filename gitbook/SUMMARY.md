@@ -23,6 +23,8 @@
 
 ## Fuzzing Example
 
+* [Fuzzing ImageMagick](afl-fuzzing/imagemagick-fuzzing.md)
+* [Fuzzing libtiff](afl-fuzzing/libtiff-fuzzing.md)
 * [Fuzzing libgit2](afl-fuzzing/libgit2-fuzzing.md)
 * [Fuzzing on Windows with WinAFL](winafl/qh-fuzzing.md)
 
