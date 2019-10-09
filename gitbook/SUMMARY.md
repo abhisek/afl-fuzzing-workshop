@@ -24,6 +24,7 @@
 ## Fuzzing Example
 
 * [Fuzzing libgit2](afl-fuzzing/libgit2-fuzzing.md)
+* [Fuzzing on Windows with WinAFL](winafl/qh-fuzzing.md)
 
 ## Extra
 
