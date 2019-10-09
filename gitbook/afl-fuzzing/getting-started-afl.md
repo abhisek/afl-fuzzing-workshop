@@ -50,6 +50,12 @@ export f=$(ls /tmp/h1/output/crashes/ |head -n 1)
 cat /tmp/h1/output/crashes/$f | ./a.out
 ```
 
+## Am I doing it right?
+
+One of things about finding bugs continuously is to ensure incremental improvement in fuzzing strategy. That means, when you start the fuzzing process, you must have the means to measure effectiveness of the current strategy.
+
+This can be done using basic coverage analysis i.e. measure the code coverage ratio (or percentage) observed during fuzzing within a reasonable time period. If this is very less, then we must look into better strategy for fuzzing.
+
 ## Coverage Guided Fuzzing
 
 > American Fuzzy Lop is a brute-force fuzzer coupled with an exceedingly simple but rock-solid instrumentation-guided genetic algorithm. It uses a modified form of edge coverage to effortlessly pick up subtle, local-scale changes to program control flow.
@@ -75,6 +81,10 @@ Simplifying a bit, the overall algorithm can be summed up as:
 ```
 
 > http://lcamtuf.coredump.cx/afl/README.txt
+
+### Static Analysis of Fuzz Target
+
+[Basic Block](https://en.wikipedia.org/wiki/Basic_block) count in a program can be used as an indicator to measure coverage during fuzzing. However, a process consists of a main binary and associated shared libraries. In such a case, we need to identify the basic block count in the fuzz target i.e. the library or program that contains our target code.
 
 ## Reference
 
