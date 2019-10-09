@@ -2,12 +2,22 @@
 
 We will fuzz `libgit2` as a real-life target. The reason for choosing this target is due to ready availability of stub code meant for fuzzing with `libFuzzer` i.e. a `fuzz target`. This can easily be re-purposed for fuzzing with AFL. For other targets, we need to re-purpose the program or write a new program using interesting functions if the target is a shared library.
 
-[https://github.com/libgit2/libgit2](https://github.com/libgit2/libgit2)
+Source: [https://github.com/libgit2/libgit2](https://github.com/libgit2/libgit2)
+
+Start by cloning `libgit2` locally
+
+```
+git clone --depth=1 https://github.com/libgit2/libgit2
+```
 
 For fuzzing with AFL, we have to slightly re-purpose `fuzzers/standalone_driver.c` to read input from `STDIN` instead of from a corpus directory.
 
 ```c
-// Snipped code
+#include <stdio.h>
+
+#include "git2.h"
+#include "futils.h"
+#include "path.h"
 
 extern int LLVMFuzzerTestOneInput(const unsigned char *data, size_t size);
 extern int LLVMFuzzerInitialize(int *argc, char ***argv);
@@ -46,7 +56,6 @@ cmake -D BUILD_FUZZERS:BOOL=ON \
   -D CMAKE_CXX_COMPILER=afl-clang-fast++ \
   ..
 cmake --build .
-make
 ```
 
 Start the fuzzing process by following the steps below:

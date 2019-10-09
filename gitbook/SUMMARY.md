@@ -15,9 +15,11 @@
 
 ## Fuzzing with AFL
 
+* [Fuzzing Primitives](afl-fuzzing/fuzzing-primitives.md)
 * [Getting Started with AFL](afl-fuzzing/getting-started-afl.md)
 * [Persistent Mode Fuzzing](afl-fuzzing/persistent-mode-fuzzing.md)
 * [Parallel Fuzzing](afl-fuzzing/parallel-fuzzing.md)
+* [AFL Tools Suite](afl-fuzzing/tools-suite.md)
 
 ## Fuzzing Example
 
