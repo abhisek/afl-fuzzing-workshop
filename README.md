@@ -24,7 +24,7 @@ cd <dir>
 Install `Gitbook` cli
 
 ```
-npm install gitbook-cli
+sudo npm install -g gitbook-cli
 ```
 
 Start local Gitbook server to following workshop content

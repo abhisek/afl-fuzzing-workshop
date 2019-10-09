@@ -3,6 +3,7 @@ bin/*
 !bin/EMPTY
 src/*.o
 scratch
+a.out
 
 ubuntu-xenial-16.04-cloudimg-console.log
 ubuntu-bionic-18.04-cloudimg-console.log

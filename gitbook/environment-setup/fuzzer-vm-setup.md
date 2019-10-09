@@ -21,9 +21,11 @@ vagrant ssh
 
 > Everything else is done inside the VM
 
+<!--
 ## Change Core Pattern for AFL
 
 ```
 sudo -i
 echo core >/proc/sys/kernel/core_pattern
 ```
+-->

@@ -22,7 +22,12 @@ Vagrant.configure("2") do |config|
     LLVM_CONFIG=/usr/bin/llvm-config-6.0 make
     cd .. && make install
 
-    echo 'kernel.core_pattern = core' | sudo tee /etc/sysctl.conf
+    cd /tmp
+    wget https://gitlab.com/akihe/radamsa/uploads/a2228910d0d3c68d19c09cee3943d7e5/radamsa-0.6.c.gz
+    gzip -d radamsa-0.6.c.gz
+    sudo gcc -o /usr/local/bin/radamsa radamsa-0.6.c
+
+    echo 'kernel.core_pattern = core' | sudo tee -a /etc/sysctl.conf
     sysctl -p
   SHELL
 end

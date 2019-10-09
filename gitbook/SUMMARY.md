@@ -26,6 +26,10 @@
 * [Fuzzing libgit2](afl-fuzzing/libgit2-fuzzing.md)
 * [Fuzzing on Windows with WinAFL](winafl/qh-fuzzing.md)
 
+## Threat Modelling
+
+* [Threat Modelling for Vulnerability Research](threat-modelling/threat-modelling-for-vulnerability-research.md)
+
 ## Extra
 
 * [Extra and References](extra/extra-references.md)
