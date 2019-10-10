@@ -1,5 +1,11 @@
 # Fuzzing libtiff
 
+Install required dependencies
+
+```
+sudo apt-get install zlib1g-dev
+```
+
 Start by downloading and extracting the sources
 
 ```
