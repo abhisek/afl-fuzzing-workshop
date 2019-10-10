@@ -2,6 +2,10 @@
 
 > All the activities in this document are performed within the Fuzzer VM
 
+## What is AFL?
+
+> American fuzzy lop is a security-oriented fuzzer that employs a novel type of compile-time instrumentation and genetic algorithms to automatically discover clean, interesting test cases that trigger new internal states in the targeted binary.
+
 ## First Fuzz
 
 We will fuzz the program `hello-vulnerable-world.c` available in `src` directory in the repo.

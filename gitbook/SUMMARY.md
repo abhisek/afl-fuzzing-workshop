@@ -5,8 +5,7 @@
 ## Introduction
 
 * [Introduction](introduction/README.md)
-* [Terminologies](introduction/terminologies.md)
-* [Disclaimer](introduction/disclaimer.md)
+<!-- * [Terminologies](introduction/terminologies.md) -->
 
 ## Environment Setup
 
