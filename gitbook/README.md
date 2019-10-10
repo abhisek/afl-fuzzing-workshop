@@ -1,1 +1,3 @@
-# Software Vulnerability Discovery using Static Analysis and Fuzzing
+# Software Vulnerability Discovery Using Static Analysis and Fuzzing
+
+![](images/bsides.png)
