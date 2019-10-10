@@ -9,8 +9,8 @@ In most real-world scenario, a fuzzing process consist of a set of tools (fuzzer
 1. Generates random, valid or invalid input
 2. Executes target program with generated input
 3. Monitors target program execution for possible fault (e.g. crash)
-4. Observes runtime behavior which may influence it's input generation
-5. Logs everything
+4. Observes runtime behavior which may influence fuzzer input generation
+5. Log everything, especially input data and process state during a crash
 
 ## Fuzzer Types
 
